@@ -18,7 +18,6 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
          input: CodePipelineSource.gitHub('ahmadshahwasmari/cdk', 'master'),
          
          // Install dependencies, build and run cdk synth
-	 installCommands: ['npm i -g npm@latest'],
          commands: [
            'npm ci',
            'npm run build',
